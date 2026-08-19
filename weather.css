@@ -16,8 +16,7 @@ body {
 }
 
 .showWeather {
-	/* display: none; */
-	/* height: 100dvh; */
+	display: none;
 }
 
 header {
@@ -26,7 +25,6 @@ header {
 		height: 3rem;
 		display: flex;
 		justify-content: center;
-		/* transform: translateY(15rem); */
 		z-index: 7;
 		input {
 			height: 3rem;
@@ -46,7 +44,6 @@ header {
 			border-radius: 15px;
 			outline: none;
 			border: 2px solid black;
-			/* background-color: white; */
 			border: 2px solid rgba(255, 255, 255, 0.15);
 			background-color: rgba(255, 255, 255, 0.596);
 			cursor: pointer;
@@ -59,35 +56,27 @@ header {
 			border: 2px solid rgba(255, 255, 255, 0.15);
 			padding-left: 1rem;
 			padding-right: 1rem;
-			/* padding-top: 0.5rem; */
 			list-style: none;
 			background-color: #ffffff15;
 			position: relative;
-			/* height: 15rem; */
 			z-index: 1;
 			border-radius: 15px;
 			backdrop-filter: blur(50px);
 			margin-top: 0.4rem;
 			display: none;
-			/* display: block; */
 		}
 	}
 }
 
 .search {
 	width: 30%;
-	/* position: relative; */
-	/* border: 1px solid white; */
 }
 .search-result li {
-	/* padding-left: 1rem; */
 	display: flex;
 	align-items: center;
-	/* height: 2rem; */
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 	padding: 0.5rem 0rem 0.5rem 1rem;
-	/* border-bottom: 1px solid white; */
 	background: #ffffff05;
 	backdrop-filter: blur(20px);
 	border-radius: 5px;
@@ -98,7 +87,6 @@ header {
 }
 
 .search-result li:hover {
-	/* background: #ffffff76; */
 	border: 1px solid white;
 }
 .sform input:focus {
@@ -107,12 +95,10 @@ header {
 }
 
 .main {
-	/* border: 2px solid rgb(196, 22, 22); */
 	display: flex;
 	padding: 3rem 0 3rem 0;
 	align-items: center;
 	width: 90%;
-	/* overflow: scroll; */
 	margin: auto;
 	margin-top: 2rem;
 	border-radius: 15px;
@@ -128,8 +114,6 @@ header {
 }
 
 .temp {
-	/* border: 2px solid greenyellow; */
-	/* height: 15rem; */
 	display: flex;
 	justify-content: start;
 	align-items: center;
@@ -165,16 +149,13 @@ header {
 }
 
 .add-info {
-	/* border: 2px solid greenyellow; */
 	width: 50%;
-	/* height: 15rem; */
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
 }
 
 .card {
-	/* border: 1px solid cyan; */
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	background: linear-gradient(
 		90deg,
@@ -183,8 +164,6 @@ header {
 	);
 	box-shadow: 1px 1px 30px 10px #00000043;
 	backdrop-filter: blur(10px);
-	/* width: 10rem; */
-	/* height: 10rem; */
 	padding: 2rem 2rem 2rem 2rem;
 	gap: 1.5rem;
 	border-radius: 15px;
@@ -193,22 +172,15 @@ header {
 	flex-wrap: wrap;
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 	.title {
-		/* padding: 1.5rem 0 0 1.5rem; */
 		font-size: 1.1rem;
 		line-height: 1.1rem;
-		/* border: 1px solid yellow; */
-		/* height: 1.5rem; */
-		/* color: rgba(255, 255, 255, 0.8); */
 		color: #d0e7e5dd;
 	}
 
 	.val {
-		/* border: 1px solid yellow; */
 		display: flex;
 		align-items: center;
 		justify-content: start;
-		/* padding-left: 1rem; */
-		/* flex-grow: 1; */
 		gap: 1rem;
 		font-size: 1.2rem;
 		svg {
@@ -221,18 +193,15 @@ header {
 
 .secondary {
 	display: flex;
-	/* border: 1px solid red; */
 	width: 90%;
 	margin: auto;
 	margin-top: 2rem;
+	margin-bottom: 2rem;
 	gap: 2rem;
 }
 
 .hourly {
-	/* border: 1px solid yellow; */
-	/* flex-grow: 3; */
 	width: 60%;
-	/* height: 20rem; */
 	border-radius: 15px;
 	background: linear-gradient(
 		45deg,
@@ -249,12 +218,10 @@ header {
 		font-size: 1.5rem;
 		padding: 1.5rem 0 0 1.5rem;
 		line-height: 1.5rem;
-		/* border: 1px solid yellow; */
 	}
 }
 
 .hour-cont {
-	/* border: 1px solid yellow; */
 	height: 100%;
 	display: flex;
 	gap: 2rem;
@@ -274,39 +241,31 @@ header {
 }
 
 .hour-card {
-	/* border: 1px solid white; */
-	width: 9rem;
-	/* height: 13rem; */
 	flex-shrink: 0;
 	background: #ffffff1b;
-	border-radius: 15px;
+	border-radius: 14px;
 	border: 1px solid rgba(255, 255, 255, 0.241);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	/* justify-content: center; */
-	padding-top: 0.75rem;
+	padding: 0.75rem 2rem 0 2rem;
 	h6 {
 		font-size: 1.4rem;
 		text-align: center;
-		/* border: 1px solid white; */
 		color: #d0e7e5dd;
 	}
 	img {
 		height: 2.2rem;
-		/* border: 1px solid white; */
 		margin-top: 1rem;
 	}
 	.hour-temp {
 		font-size: 1.5rem;
-		/* border: 1px solid white; */
 		margin-top: 0.5rem;
 		font-weight: bold;
 	}
 	.h-prob {
 		font-size: 0.9rem;
 		margin-top: 0.75rem;
-		/* border: 1px solid white; */
 		color: #d0e7e5dd;
 		color: #6a8bf5;
 		margin-bottom: 1rem;
@@ -314,7 +273,6 @@ header {
 }
 
 .hour-card:hover {
-	/* border: 1px solid white; */
 	box-shadow: 0px 0px 5px 1px rgba(255, 255, 255, 0.262);
 }
 
@@ -324,10 +282,7 @@ header {
 }
 
 .daily {
-	/* border: 1px solid yellow; */
-	/* flex-grow: 2; */
 	width: 40%;
-	/* height: 20rem; */
 	border-radius: 15px;
 	box-shadow: 1px 1px 30px 10px #00000043;
 	background: linear-gradient(
@@ -344,7 +299,6 @@ header {
 		font-size: 1.5rem;
 		padding: 1.5rem 0 0 1.5rem;
 		line-height: 1.5rem;
-		/* border: 1px solid yellow; */
 	}
 }
 
@@ -352,7 +306,6 @@ header {
 	overflow-y: auto;
 	scroll-behavior: smooth;
 	height: 10rem;
-	/* border: 1px solid yellow; */
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
@@ -375,15 +328,12 @@ header {
 .daily-cont ul li {
 	width: 100%;
 	height: 3.5rem;
-	/* border: 2px solid white; */
 	display: flex;
 	border-bottom: 1px solid white;
 	font-size: 1rem;
-	line-height: 1rem;
 	align-items: center;
 	padding-left: 1rem;
 	padding-right: 1rem;
-	/* gap: 3rem; */
 	justify-content: space-between;
 	img {
 		height: 1.75rem;
@@ -451,11 +401,8 @@ header {
 		width: 100%;
 		flex-wrap: wrap;
 		row-gap: 1rem;
-		/* gap: 1rem; */
 	}
 	.card {
-		/* height: 10rem; */
-		/* width: 10rem; */
 		margin: 0 0.2rem 0 0.2rem;
 		gap: 1rem;
 		padding: 1.6rem;
@@ -470,12 +417,11 @@ header {
 	}
 }
 
-@media (max-width: 427px) {
+@media (max-width: 550px) {
 	.main {
 		gap: 2rem;
 	}
 	.temp {
-		/* border: 1px solid wheat; */
 		gap: 2rem;
 		align-items: center;
 		justify-content: start;
@@ -490,8 +436,6 @@ header {
 		}
 	}
 	.card {
-		/* height: auto; */
-		/* width: auto; */
 		padding: 0.5rem 0.75rem 1rem 0.5rem;
 		gap: 0.8rem;
 		justify-content: left;
@@ -509,6 +453,44 @@ header {
 				height: 1rem;
 				width: 1rem;
 			}
+		}
+	}
+	.secondary {
+		margin-top: 1.5rem;
+		gap: 1.5rem;
+	}
+	.hour-cont {
+		gap: 1rem;
+	}
+
+	.hourly {
+		padding-bottom: 1.5rem;
+	}
+
+	.hour-card {
+		padding: 0.6rem 1.5rem 0 1.5rem;
+		h6 {
+			font-size: 1rem;
+		}
+		img {
+			height: 1.6rem;
+		}
+		.hour-temp {
+			font-size: 1rem;
+		}
+	}
+	.daily-cont ul {
+		padding: 0 1rem 0 1rem;
+	}
+	.daily-cont ul li {
+		padding: 0 0.8rem 0 0.8rem;
+		.date,
+		.min-max,
+		.con {
+			font-size: 0.8rem;
+		}
+		img {
+			height: 1.5rem;
 		}
 	}
 }
